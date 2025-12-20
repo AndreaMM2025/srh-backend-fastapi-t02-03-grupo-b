@@ -26,6 +26,14 @@ asignadas a la única integrante activa del grupo Andrea Murillo, quien realizó
 individual todas las actividades de análisis, diseño, implementación y
 documentación del backend de la aplicación.
 
+## Asignación de Tareas
+
+- Backend y framework FastAPI: Andrea Murillo  
+- Gestión de clientes, habitaciones y reservas: Andrea Murillo  
+- Documentación Swagger: Andrea Murillo  
+- Control de versiones y repositorio GitHub: Andrea Murillo
+
+
 ## Cumplimiento de la SRS y la DDS
 
 El desarrollo del backend se realizó tomando como base los requerimientos
