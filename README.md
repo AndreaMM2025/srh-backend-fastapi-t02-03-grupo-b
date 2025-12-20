@@ -41,3 +41,18 @@ El backend fue desarrollado siguiendo un esquema de arquitectura por capas,
 separando modelos, esquemas (schemas) y controladores (routers), equivalente al
 modelo/repositorio/controlador/servicio definido en la consigna, lo que permite
 un código modular, ordenado y mantenible.
+
+## Ejecución y Visualización
+
+Para ejecutar el backend del SRH, se debe levantar el servidor con el siguiente comando:
+
+```bash
+uvicorn app.main:app --reload
+
+Una vez iniciado el servidor, el sistema puede visualizarse en:
+
+Página principal del backend:
+http://127.0.0.1:8000
+
+Documentación de los servicios (Swagger):
+http://127.0.0.1:8000/docs
