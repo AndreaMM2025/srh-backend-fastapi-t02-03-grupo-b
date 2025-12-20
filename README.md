@@ -69,6 +69,12 @@ accesible a través del endpoint:
 
 ---
 
+El repositorio fue compartido con los integrantes del grupo mediante la
+configuración de colaboradores en GitHub, permitiendo el trabajo colaborativo
+y el control de versiones.
+
+---
+
 ## Arquitectura del Sistema
 
 El backend fue desarrollado siguiendo una arquitectura por capas, separando los
@@ -77,7 +83,11 @@ equivalente al esquema modelo / repositorio / controlador / servicio definido en
 la consigna, lo que permite un código modular, ordenado y mantenible.
 
 ---
+El repositorio fue compartido con los integrantes del grupo mediante la
+configuración de colaboradores en GitHub, permitiendo el trabajo colaborativo
+y el control de versiones.
 
+---
 ## Ejecución y Visualización
 
 Para ejecutar el backend del SRH se debe iniciar el servidor con el siguiente
@@ -85,3 +95,4 @@ comando:
 
 ```bash
 uvicorn app.main:app --reload
+
