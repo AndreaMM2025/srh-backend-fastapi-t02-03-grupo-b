@@ -1,6 +1,6 @@
-# SRH Backend - FastAPI
+# SRH - SISTEMA DE RESERVAS DE HOTELES BACKEND - FASTAPI
 
-Backend del Sistema de Reservas de Hotel (SRH)
+Backend del Sistema de Reservas de Hoteles (SRH)
 
 Materia: Ingeniería de Software  
 Tarea: T02.03
