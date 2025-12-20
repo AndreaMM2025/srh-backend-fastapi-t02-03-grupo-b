@@ -1,0 +1,133 @@
+BITÁCORA DE COMANDOS – CONTROL DE VERSIONES
+PROYECTO: SRH Backend – FastAPI
+Materia: Ingeniería de Software
+Tarea: T02.03
+Grupo: B
+Integrantes:
+- Andrea Murillo Medina
+- Andy Arevalo DUeñas
+
+--------------------------------------------------
+1. CREACIÓN DEL PROYECTO Y REPOSITORIO
+--------------------------------------------------
+
+Se creó el directorio del proyecto en el equipo local:
+
+mkdir srh-backend-fastapi
+cd srh-backend-fastapi
+
+--------------------------------------------------
+2. INICIALIZACIÓN DE GIT
+--------------------------------------------------
+
+Se inicializó el repositorio Git en el proyecto:
+
+git init
+
+Se verificó el estado del repositorio:
+
+git status
+
+--------------------------------------------------
+3. CONFIGURACIÓN DEL REPOSITORIO REMOTO
+--------------------------------------------------
+
+Se agregó el repositorio remoto de GitHub:
+
+git remote add origin https://github.com/AndreaMM2025/srh-backend-fastapi-t02-03-grupo-b.git
+
+Se verificó el repositorio remoto configurado:
+
+git remote -v
+
+--------------------------------------------------
+4. CREACIÓN DEL ENTORNO VIRTUAL
+--------------------------------------------------
+
+Se creó el entorno virtual de Python:
+
+python -m venv venv
+
+Se activó el entorno virtual (Windows):
+
+venv\Scripts\activate
+
+--------------------------------------------------
+5. INSTALACIÓN DE DEPENDENCIAS
+--------------------------------------------------
+
+Se instalaron las dependencias principales del proyecto:
+
+pip install fastapi
+pip install uvicorn
+pip install pydantic[email]
+
+--------------------------------------------------
+6. EJECUCIÓN DEL SERVIDOR
+--------------------------------------------------
+
+Se ejecutó el backend con Uvicorn:
+
+uvicorn app.main:app --reload
+
+Se verificó el funcionamiento del backend en:
+
+http://127.0.0.1:8000
+
+Se verificó la documentación Swagger en:
+
+http://127.0.0.1:8000/docs
+
+--------------------------------------------------
+7. CONTROL DE VERSIONES – COMMITS
+--------------------------------------------------
+
+Se agregaron los archivos al área de staging:
+
+git add .
+
+Se realizó el primer commit del proyecto:
+
+git commit -m "feat: api base fastapi funcionando y swagger activo"
+
+Se subieron los cambios al repositorio remoto:
+
+git push --set-upstream origin main
+
+--------------------------------------------------
+8. ACTUALIZACIÓN DE DOCUMENTACIÓN
+--------------------------------------------------
+
+Se realizaron cambios en el archivo README.md para documentar el proyecto.
+
+Se agregaron los cambios al staging:
+
+git add README.md
+
+Se realizó el commit de documentación:
+
+git commit -m "docs: actualizar README del proyecto"
+
+Se subieron los cambios a GitHub:
+
+git push
+
+--------------------------------------------------
+9. VERIFICACIÓN DE COMMITS
+--------------------------------------------------
+
+Se verificó el historial de commits:
+
+git log --oneline
+
+Se comprobó que el repositorio se encontraba actualizado:
+
+git status
+
+Resultado esperado:
+On branch main
+nothing to commit, working tree clean
+
+--------------------------------------------------
+FIN DE LA BITÁCORA DE COMANDOS
+--------------------------------------------------
