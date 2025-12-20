@@ -1,9 +1,11 @@
 # SRH Backend - FastAPI
 
-Backend del Sistema de Reservas de Hotel  
+Backend del Sistema de Reservas de Hotel (SRH)
+
 Materia: Ingeniería de Software  
 Tarea: T02.03
 Grupo: B
+
 Nombre: Andrea Murillo Medina
 
 ## Gestión del Proyecto
