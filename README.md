@@ -42,10 +42,14 @@ planteadas en la Tarea 02.02 (DDS). Para esta implementación se desarrollaron
 los módulos núcleo del sistema: Clientes, Habitaciones y Reservas, los cuales
 representan el flujo principal del sistema de reservas hoteleras.
 
-## Framework Backend
 
-El backend de la aplicación fue implementado utilizando el framework FastAPI,
-cumpliendo con las opciones permitidas en la consigna de la Tarea 02.03.
+## Backend y Framework
+
+El backend del proyecto corresponde a una API REST desarrollada para el Sistema
+de Reservas de Hoteles. Para la implementación del backend se utilizó el
+framework FastAPI, el cual permitió la creación de servicios REST eficientes y
+la documentación automática de los endpoints mediante Swagger.
+
 
 ## Documentación de Servicios
 
