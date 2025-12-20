@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import clientes
+from app.routers import clientes, habitaciones
 
 app = FastAPI(title="SRH Backend")
 
@@ -8,4 +8,6 @@ def root():
     return {"message": "API funcionando correctamente"}
 
 app.include_router(clientes.router)
+app.include_router(habitaciones.router)
+
 # para visualizar la pagina del srh backend http://127.0.0.1:8000/docsv
