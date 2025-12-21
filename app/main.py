@@ -14,4 +14,8 @@ app.include_router(facturas.router)
 app.include_router(pagos.router)
 app.include_router(reportes.router)
 
-# para visualizar la pagina del srh backend http://127.0.0.1:8000/docsv
+"""
+Documentación del backend SRH:
+Swagger UI: http://127.0.0.1:8000/docs
+OpenAPI JSON: http://127.0.0.1:8000/openapi.json
+"""
