@@ -1,3 +1,4 @@
+# Creación de HabitacionCreate y HabitacionResponse
 from pydantic import BaseModel
 
 class HabitacionCreate(BaseModel):
