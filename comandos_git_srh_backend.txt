@@ -141,6 +141,10 @@ git stash pop
 10. VERIFICACIÓN DEL HISTORIAL DE COMMITS
 --------------------------------------------------
 
+Se verificó el historial general de commits del repositorio:
+
+git log
+
 Se verificó el historial de commits del repositorio:
 
 git log --oneline
