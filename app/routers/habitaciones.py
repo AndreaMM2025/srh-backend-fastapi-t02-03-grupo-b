@@ -1,3 +1,4 @@
+# Creación de habitaciones
 from fastapi import APIRouter
 from app.schemas.habitacion_schema import HabitacionCreate, HabitacionResponse
 
