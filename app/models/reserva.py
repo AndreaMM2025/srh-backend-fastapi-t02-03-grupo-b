@@ -8,4 +8,4 @@ class Reserva(BaseModel):
     habitacion_id: int
     fecha_inicio: str
     fecha_fin: str
-    estado: str = "pendiente"  # pendiente | confirmada | cancelada
+    estado: str = "Pendiente"
