@@ -1,3 +1,4 @@
+# Main Actualizado
 from fastapi import FastAPI
 from app.routers import (
     clientes,
@@ -6,7 +7,7 @@ from app.routers import (
     facturas,
     pagos,
     reportes,
-    usuarios   # 👈 NUEVO
+    usuarios 
 )
 
 app = FastAPI(
