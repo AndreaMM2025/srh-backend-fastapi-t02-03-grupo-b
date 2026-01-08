@@ -50,10 +50,11 @@ evidenciar la participación de los integrantes del grupo y el avance del proyec
 
 - Diseño e implementación del backend (FastAPI): Andrea Murillo
 - Gestión de clientes, habitaciones, reservas, facturas y pagos: Andrea Murillo
-- Implementación de pruebas unitarias y cobertura: Andrea Murillo
+- Implementación y actualización de pruebas unitarias en carpeta test/: Andrea Murillo, Keyla Sisalima y Andy Arévalo
+- Actualización de documentación README1.md y bitácora comandos_t02_04.txt: Andrea Murillo
 - Elaboración del diagrama UML general (Controller, Service, Repository, Crud): Keyla Sisalima
 - Apoyo en revisión, ajustes y mejoras del proyecto: Andy Arévalo
-- Control de versiones y repositorio GitHub: Andrea Murillo y Andy Arévalo
+- Control de versiones y repositorio GitHub: Andrea Murillo , Andy Arévalo y Keyla Sisalima
 
 ---
 
