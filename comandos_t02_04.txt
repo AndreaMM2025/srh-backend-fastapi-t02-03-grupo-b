@@ -1,0 +1,121 @@
+BITÁCORA DE COMANDOS – CONTROL DE VERSIONES
+
+PROYECTO: SRH Backend – FastAPI
+
+Materia: Ingeniería de Software
+
+Tarea: T02.04 – Pruebas Unitarias
+
+Grupo: B
+
+Integrantes:
+- Andrea Murillo Medina
+- Andy Arévalo Dueñas
+- Keyla Sisalima Torres
+- Gregory Morán Silva
+
+--------------------------------------------------
+1. CREACIÓN DE CARPETA DE PRUEBAS
+--------------------------------------------------
+
+Se creó la carpeta de pruebas en la raíz del proyecto:
+
+mkdir test
+
+--------------------------------------------------
+2. CREACIÓN DE ARCHIVOS DE PRUEBAS
+--------------------------------------------------
+
+Se crearon los archivos de pruebas unitarias:
+
+test_root.py
+test_usuarios.py
+test_clientes.py
+test_habitaciones.py
+test_reservas.py
+test_facturas.py
+test_pagos.py
+
+--------------------------------------------------
+3. INSTALACIÓN DE FRAMEWORKS DE TESTING
+--------------------------------------------------
+
+Se instalaron las dependencias necesarias:
+
+pip install pytest
+pip install coverage
+
+--------------------------------------------------
+4. EJECUCIÓN DE PRUEBAS UNITARIAS
+--------------------------------------------------
+
+Se ejecutaron todas las pruebas unitarias:
+
+pytest
+
+--------------------------------------------------
+5. ANÁLISIS DE COBERTURA
+--------------------------------------------------
+
+Se ejecutó el análisis de cobertura de código:
+
+coverage run -m pytest
+coverage report -m
+
+--------------------------------------------------
+6. COMMITS DE PRUEBAS UNITARIAS
+--------------------------------------------------
+
+Se agregaron los archivos de pruebas:
+
+git add test/
+git commit -m "test: agregar pruebas unitarias del backend"
+
+--------------------------------------------------
+7. ACTUALIZACIÓN DE DOCUMENTACIÓN
+--------------------------------------------------
+
+Se actualizó el archivo README.md para la T02.04:
+
+git add README1.md
+git commit -m "docs: actualizar README1 para T02.04"
+
+--------------------------------------------------
+8. ACTUALIZACIÓN DE DEPENDENCIAS
+--------------------------------------------------
+
+Se actualizó el archivo requirements.txt:
+
+git add requirements.txt
+git commit -m "chore: agregar pytest y coverage"
+
+
+Se agregó el archivo de bitácora al repositorio:
+
+git add comandos_t02_04.txt
+git commit -m "docs: agregar bitácora de comandos T02.04"
+
+
+--------------------------------------------------
+9. SUBIDA DE CAMBIOS AL REPOSITORIO
+--------------------------------------------------
+
+Se subieron los cambios al repositorio remoto:
+
+git push
+
+--------------------------------------------------
+10. VERIFICACIÓN FINAL
+--------------------------------------------------
+
+Se verificó el estado del repositorio:
+
+git status
+
+Resultado esperado:
+On branch main
+nothing to commit, working tree clean
+
+--------------------------------------------------
+FIN DE LA BITÁCORA DE COMANDOS
+--------------------------------------------------
