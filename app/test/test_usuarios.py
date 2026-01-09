@@ -5,20 +5,23 @@ client = TestClient(app)
 
 def test_crear_usuario_1():
     usuario = {
-        "ID_USUARIO": 1,
-        "NOMBRE": "Admin",
-        "ROL": "administrador",
-        "ESTADO": True
+        "nombre": "Admin",
+        "rol": "administrador",
+        "estado": True
     }
 
     response = client.post("/api/usuarios/", json=usuario)
     assert response.status_code == 200
 
     data = response.json()
-    assert data["ID_USUARIO"] == 1
-    assert data["NOMBRE"] == "Admin"
-    assert data["ROL"] == "administrador"
 
+    # Validamos campos principales
+    assert data["nombre"] == "Admin"
+    assert data["rol"] == "administrador"
+    assert data["estado"] is True
+
+    # Validamos que el backend genere un id
+    assert "id" in data
 
 def test_listar_usuarios():
     response = client.get("/api/usuarios/")
