@@ -5,22 +5,20 @@ client = TestClient(app)
 
 def test_crear_cliente_1():
     cliente = {
-        "ID_CLIENTE": 1,
-        "NOMBRE": "Andrea Murillo",
-        "IDENTIFICACION": "0954769287",
-        "TELEFONO": "0992319870",
-        "CORREO": "amurillom3@est.ups.edu.ec",
-        "NACIONALIDAD": "Ecuatoriana"
+        "nombre": "Andrea Murillo",
+        "identificacion": "0954769287",
+        "telefono": "0992319870",
+        "correo": "amurillom3@est.ups.edu.ec",
+        "nacionalidad": "Ecuatoriana"
     }
 
     response = client.post("/api/clientes/", json=cliente)
     assert response.status_code == 200
 
     data = response.json()
-    assert data["ID_CLIENTE"] == 1
-    assert data["NOMBRE"] == "Andrea Murillo"
-    assert data["CORREO"] == "amurillom3@est.ups.edu.ec"
-
+    assert data["nombre"] == "Andrea Murillo"
+    assert data["correo"] == "amurillom3@est.ups.edu.ec"
+    assert "id" in data
 
 def test_listar_clientes():
     response = client.get("/api/clientes/")
