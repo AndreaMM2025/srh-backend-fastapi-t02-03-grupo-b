@@ -14,6 +14,20 @@ Integrantes:
 - Keyla Sisalima Torres
 - Gregory Morán Silva
 
+
+--------------------------------------------------
+0. CONFIGURACIÓN DEL REPOSITORIO REMOTO
+--------------------------------------------------
+
+Se agregó el repositorio remoto de GitHub:
+
+git remote add origin https://github.com/AndreaMM2025/SRH-backend-fastapi-t02-03-y-del-t02-04-Grupo-B.git
+
+Se verificó el repositorio remoto:
+
+git remote -v
+
+
 --------------------------------------------------
 1. CREACIÓN DE CARPETA DE PRUEBAS
 --------------------------------------------------
