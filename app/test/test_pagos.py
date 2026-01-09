@@ -5,20 +5,19 @@ client = TestClient(app)
 
 def test_crear_pago_1():
     pago = {
-        "ID_PAGO": 1,
-        "ID_FACTURA": 1,
-        "FECHA": "2026-01-02",
-        "MONTO": 120.0,
-        "METODO": "tarjeta"
+        "factura_id": 1,
+        "fecha": "2026-01-02",
+        "monto": 120.0,
+        "metodo": "tarjeta"
     }
 
     response = client.post("/api/pagos/", json=pago)
     assert response.status_code == 200
 
     data = response.json()
-    assert data["ID_PAGO"] == 1
-    assert data["MONTO"] == 120.0
-
+    assert data["monto"] == 120.0
+    assert data["metodo"] == "tarjeta"
+    assert "id" in data
 
 def test_listar_pagos():
     response = client.get("/api/pagos/")
