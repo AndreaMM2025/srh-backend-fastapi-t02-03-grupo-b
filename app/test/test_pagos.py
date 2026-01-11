@@ -7,7 +7,7 @@ def test_crear_pago_1():
     pago = {
         "factura_id": 1,
         "fecha": "2026-01-02",
-        "monto": 120.0,
+        "monto": 10.0,
         "metodo": "tarjeta"
     }
 
@@ -23,16 +23,16 @@ def test_crear_pago_2():
     pago = {
         "factura_id": 2,
         "fecha": "2026-02-05",
-        "monto": 120.0,
-        "metodo": "tarjeta"
+        "monto": 150.0,
+        "metodo": "Efectivo"
     }
 
     response = client.post("/api/pagos/", json=pago)
     assert response.status_code == 200
 
     data = response.json()
-    assert data["monto"] == 120.0
-    assert data["metodo"] == "tarjeta"
+    assert data["monto"] == 150.0
+    assert data["metodo"] == "Efectivo"
     assert "id" in data
 
 
