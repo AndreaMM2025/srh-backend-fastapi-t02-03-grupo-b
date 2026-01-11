@@ -26,7 +26,7 @@ def test_crear_factura_2():
     factura = {
         "cliente_id": 2,
         "reserva_id": 2,
-        "total": 120.0,
+        "total": 200.0,
         "fecha": "2026-02-05"
     }
 
@@ -37,8 +37,8 @@ def test_crear_factura_2():
     data = response.json()
     assert data["cliente_id"] == 2
     assert data["reserva_id"] == 2
-    
-    assert data["total"] == 120.0
+
+    assert data["total"] == 200.0
     assert data["fecha"] == "2026-02-05"
 
 def test_listar_facturas():
