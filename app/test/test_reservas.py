@@ -29,6 +29,33 @@ def test_confirmar_reserva_1():
         "fecha_fin": "2025-02-05"
     }
 
+def test_crear_reserva_2():
+    reserva = {
+        "cliente_id": 2,
+        "habitacion_id": 2,
+        "fecha_inicio": "2025-02-05",
+        "fecha_fin": "2025-02-10"
+    }
+
+    response = client.post("/api/reservas/", json=reserva)
+    assert response.status_code == 200, response.text
+
+    data = response.json()
+    assert data["cliente_id"] == 2
+    assert data["habitacion_id"] == 2
+    assert "id" in data
+    assert "estado" in data
+
+def test_confirmar_reserva_2():
+    reserva = {
+        "cliente_id": 2,
+        "habitacion_id": 2,
+        "fecha_inicio": "2025-02-05",
+        "fecha_fin": "2025-02-10"
+    }
+
+
+
     r_create = client.post("/api/reservas/", json=reserva)
     assert r_create.status_code == 200, r_create.text
     reserva_id = r_create.json()["id"]
