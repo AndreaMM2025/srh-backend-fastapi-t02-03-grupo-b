@@ -20,6 +20,20 @@ def test_crear_cliente_1():
     assert data["correo"] == "amurillom3@est.ups.edu.ec"
     assert "id" in data
 
+def test_crear_cliente_2():
+    cliente = {
+        "nombre": "Andy Arevalo",
+        "identificacion": "0950000002",
+        "telefono": "0990000002",
+        "correo": "andy2@est.ups.edu.ec",
+        "nacionalidad": "Argentina"
+    }
+    response = client.post("/api/clientes/", json=cliente)
+    assert response.status_code == 200, response.text
+    data = response.json()
+    assert data["correo"] == "andy2@est.ups.edu.ec"
+    assert "id" in data
+
 def test_listar_clientes():
     response = client.get("/api/clientes/")
     assert response.status_code == 200
