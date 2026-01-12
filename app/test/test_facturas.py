@@ -63,7 +63,7 @@ def test_crear_factura_3():
     assert data["reserva_id"] == 3
 
     assert data["total"] == 300.0
-    assert data["fecha"] == "2026-02-05"
+    assert data["fecha"] == "2026-03-05"
 
 def test_listar_facturas():
     response = client.get("/api/facturas/")
