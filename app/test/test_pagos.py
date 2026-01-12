@@ -38,7 +38,7 @@ def test_crear_pago_2():
 def test_crear_pago_3():
     pago = {
         "factura_id": 3,
-        "fecha": "2026-02-05",
+        "fecha": "2026-03-05",
         "monto": 90.0,
         "metodo": "Efectivo"
     }

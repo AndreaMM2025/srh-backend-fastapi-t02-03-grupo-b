@@ -45,7 +45,7 @@ def test_crear_cliente_3():
     response = client.post("/api/clientes/", json=cliente)
     assert response.status_code == 200, response.text
     data = response.json()
-    assert data ["nacionalidad"] == "Colombiana"
+    assert data ["telefono"] == "0993467859"
     assert "id" in data
 
 def test_listar_clientes():

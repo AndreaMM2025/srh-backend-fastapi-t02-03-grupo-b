@@ -51,7 +51,7 @@ def test_crear_factura_3():
         "cliente_id": 3,
         "reserva_id": 3,
         "total": 300.0,
-        "fecha": "2026-02-05"
+        "fecha": "2026-03-05"
     }
 
     response = client.post("/api/facturas/", json=factura)

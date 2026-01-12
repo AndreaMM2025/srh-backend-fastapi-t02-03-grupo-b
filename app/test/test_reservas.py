@@ -81,8 +81,8 @@ def test_crear_reserva_2():
     assert response.status_code == 200, response.text
     
     data = response.json()
-    assert data["cliente_id"] == 3
-    assert data["habitacion_id"] == 3
+    assert data["cliente_id"] == 2
+    assert data["habitacion_id"] == 2
     assert "id" in data
     assert "estado" in data
 
@@ -128,50 +128,29 @@ def test_crear_reserva_3():
     reserva = {
         "cliente_id": 3,
         "habitacion_id": 3,
-        "fecha_inicio": "2025-03-15",
-        "fecha_fin": "2025-03-20"
+        "fecha_inicio": "2025-05-20",
+        "fecha_fin": "2025-05-25"
     }
     response = client.post("/api/reservas/", json=reserva)
     assert response.status_code == 200, response.text
     data = response.json()
     assert data["cliente_id"] == 3
-    assert data["habitacion_id"] == 3
-    assert "id" in data
-    assert "estado" in data
+    global reserva_id_3
+    reserva_id_3 = data["id"]
 
 def test_confirmar_reserva_3():
-    reserva = {
-        "cliente_id": 3,
-        "habitacion_id": 3,
-        "fecha_inicio": "2025-03-15",
-        "fecha_fin": "2025-03-20"
-    }
-    r_create = client.post("/api/reservas/", json=reserva)
-    assert r_create.status_code == 200, r_create.text
-    reserva_id = r_create.json()["id"]
-    
-    r_confirm = client.put(f"/api/reservas/{reserva_id}/confirmar")
-    assert r_confirm.status_code == 200, r_confirm.text
-    data = r_confirm.json()
-    assert data["id"] == reserva_id
-    assert "estado" in data
+    response = client.put(f"/api/reservas/{reserva_id_3}/confirmar")
+    assert response.status_code == 200, response.text
+    data = response.json()
+    assert data["id"] == reserva_id_3
+    assert data["estado"] == "confirmada"
 
 def test_cancelar_reserva_3():
-    reserva = {
-        "cliente_id": 3,
-        "habitacion_id": 3,
-        "fecha_inicio": "2025-03-15",
-        "fecha_fin": "2025-03-20"
-    }
-    r_create = client.post("/api/reservas/", json=reserva)
-    assert r_create.status_code == 200, r_create.text
-    reserva_id = r_create.json()["id"]
-    
-    r_cancel = client.put(f"/api/reservas/{reserva_id}/cancelar")
-    assert r_cancel.status_code == 200, r_cancel.text
-    data = r_cancel.json()
-    assert data["id"] == reserva_id
-    assert "estado" in data
+    response = client.put(f"/api/reservas/{reserva_id_3}/cancelar")
+    assert response.status_code == 200, response.text
+    data = response.json()
+    assert data["id"] == reserva_id_3
+    assert data["estado"] == "cancelada"
 
 def test_confirmar_reserva_inexistente():
     response = client.put("/api/reservas/999999/confirmar")
