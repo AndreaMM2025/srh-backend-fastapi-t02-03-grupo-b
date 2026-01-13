@@ -67,7 +67,8 @@ def test_crear_usuario_4():
     usuario = {
         "nombre": "Nathaly", 
         "rol": "Auditora", 
-        "estado": True}
+        "estado": True
+    }
     response = client.post("/api/usuarios/", json=usuario)
     assert response.status_code == 200, response.text
     data = response.json()
