@@ -18,7 +18,7 @@ Integrantes:
 - Gregory Morán Silva
 - Kevin Ramirez Villón
 
-Fecha: 09/01/2026
+Fecha: 13/01/2026
 
 Docente: Darío Huilcapi
 
