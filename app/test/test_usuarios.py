@@ -6,7 +6,7 @@ client = TestClient(app)
 def test_crear_usuario_1():
     usuario = {
         "nombre": "Admin",
-        "rol": "administrador",
+        "rol": "Administrador",
         "estado": True
     }
 
