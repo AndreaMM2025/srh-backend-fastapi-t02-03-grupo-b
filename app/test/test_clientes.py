@@ -47,6 +47,22 @@ def test_crear_cliente_3():
     data = response.json()
     assert data ["telefono"] == "0993467859"
     assert "id" in data
+    
+# Test creado por Keyla Sisalima
+def test_crear_cliente_4():
+    cliente = {
+        "nombre": "Keyla Sisalima",
+        "identificacion": "09534376589",
+        "telefono": "0993490876",
+        "correo": "keyla3@est.ups.edu.ec",
+        "nacionalidad": "Mexicana"
+    }
+    response = client.post("/api/clientes/", json=cliente)
+    assert response.status_code == 200, response.text
+    data = response.json()
+    assert data["nacionalidad"] == "Mexicana"
+    assert "id" in data
+    
 
 def test_listar_clientes():
     response = client.get("/api/clientes/")
