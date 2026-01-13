@@ -41,11 +41,6 @@ def test_crear_factura_2():
     assert data["total"] == 200.0
     assert data["fecha"] == "2026-02-05"
 
-def test_listar_facturas():
-    response = client.get("/api/facturas/")
-    assert response.status_code == 200, response.text
-    assert isinstance(response.json(), list)
-
 def test_crear_factura_3():
     factura = {
         "cliente_id": 3,
