@@ -17,7 +17,7 @@ def test_crear_usuario_1():
 
     # Validamos campos principales
     assert data["nombre"] == "Admin"
-    assert data["rol"] == "administrador"
+    assert data["rol"] == "Administrador"
     assert data["estado"] is True
 
     # Validamos que el backend genere un id
